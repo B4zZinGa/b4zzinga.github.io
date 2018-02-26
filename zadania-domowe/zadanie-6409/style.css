@@ -1,0 +1,19 @@
+#kontener {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+#pobierz {
+    transform: scale(2, 2);
+
+    border-radius: 2px;
+    border-color: black;
+
+    color: Orange;
+    background-color: black;
+    margin: 50px;
+
+
+}
