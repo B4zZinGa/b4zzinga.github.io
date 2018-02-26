@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zamówienie</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div id="tlo"></div>
+
+    <h1>A Simple Form</h1>
+    <p>Form Fundamentals</p>
+
+
+
+    <form action="https://formspree.io/kwazimodoo@wp.pl" method="post" autocomplete="on">
+
+        <fieldset id="dane">
+
+            <legend>Dane kupującego:</legend>
+
+            <br><br>
+
+            <label>
+            Imie:
+            <input type="text" name="Imie" placeholder="Wpisz swoje imię" required autofocus>
+            </label>
+
+            <br><br>
+
+            <label>
+            Telefon:
+            <input type="tel" name="telefon" placeholder="Np. 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </label>
+
+            <br><br>
+
+            <label>
+            Adres Email: 
+            <input type="email" placeholder="Wpisz swój adres email..." multiple required>
+            </label>
+
+            <br><br>
+
+        </fieldset>
+        <br>
+
+        <fieldset id="ksiazki">
+
+            <legend>Książki:</legend>
+
+            <br><br>
+
+            <select name="ksiazka" id="wybor-ksiazki">
+                
+                <option value="pusta" disabled selected>--- Wybierz ksiązkę ---</option>
+                
+                <option value="Jak ułożyć konia? - Christine Lange">Jak ułożyć konia? - Christine Lange</option>
+                
+                <option value="Voodoo w praktyce - Henry Milton">Voodoo w praktyce - Henry Milton</option>
+                
+                <option value="Pies i klecha przeciwko wszystkim - Orbitowski.L Urbaniuk.J">Pies i klecha przeciwko wszystkim - Orbitowski.L Urbaniuk.J</option>
+                
+                <option value="Dziecko dla Profesjonalistów - Leszek Talko">Dziecko dla Profesjonalistów - Leszek Talko</option>
+                
+                <option value="Honor germańskiego bobra - Roman Bratny">Honor germańskiego bobra - Roman Bratny</option>
+                        
+                
+            </select>
+            <label>Wybierz ilość (max: 5): <input id="ilosc" type="number" min="1" max="5" value="1"></label>
+
+        </fieldset>
+
+        <br><br>
+
+        <input id="submit" type="submit" value="Zamawiam i płacę">
+
+    </form>
+
+
+</body>
+
+</html>

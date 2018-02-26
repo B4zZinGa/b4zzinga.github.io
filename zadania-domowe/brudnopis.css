@@ -1,0 +1,51 @@
+body {
+    background-color: red;
+}
+
+.container {
+    width: 100%;
+    background-color: red;
+
+}
+
+.container > h1 {
+    font-size: 80px;
+    text-align: center;
+
+    color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    overflow: hidden;
+}
+
+h1:after {
+    content: '';
+
+    width: 400px;
+    height: 400px;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+
+    background: radial-gradient(circle at center, rgba(255, 0, 0, 1.0), rgba(255, 0, 0, .0) 65%);
+    box-shadow: 0px 0px 200px 20px rgba(255, 0, 0, .0);
+    border-radius: 50%;
+    
+    animation: move 1s linear infinite;
+
+}
+
+@keyframes move {
+    from {
+        left: -100px;
+    }
+    to {
+        left: 100%;
+    }
+}

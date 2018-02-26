@@ -1,0 +1,16 @@
+a {
+    text-decoration: none;
+    color: white
+}
+
+body {
+    background-image: url(https://wallpaperscraft.com/image/board_black_line_texture_background_wood_55220_2560x1600.jpg);
+}
+
+h1, h2 {
+    color: white;
+}
+
+a[href=""] {
+  display: none;
+}

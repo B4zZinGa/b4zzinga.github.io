@@ -1,0 +1,88 @@
+html {
+    font-size: 200px;
+    color: white;
+}
+
+.container {
+    width: 800px;
+    height: 800px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: -1;
+    background-image: url(https://avante.biz/wp-content/uploads/Circle-Wallpaper/Circle-Wallpaper-034.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container::after {
+    content: '10';
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+/*
+    animation-name: odliczanie;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+*/
+    
+    animation: odliczanie linear 11s forwards, hue 3s 11s infinite;
+}
+
+@keyframes odliczanie {
+    0% {
+        content: '10';
+    }
+    10% {
+        content: '9';
+    }
+    20% {
+        content: '8';
+    }
+    30% {
+        content: '7';
+    }
+    40% {
+        content: '6';
+    }
+    50% {
+        content: '5';
+    }
+    60% {
+        content: '4';
+    }
+    70% {
+        content: '3';
+    }
+    80% {
+        content: '2';
+    }
+    90% {
+        content: '1';
+    }
+    100% {
+        content: 'I love CSS'; text-align: center;
+    }
+    
+}
+/*BONUS*/
+
+@keyframes hue {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+    100% {
+        filter: hue-rotate(0deg);
+    }
+}
