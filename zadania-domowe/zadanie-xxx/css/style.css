@@ -67,7 +67,18 @@ h3 {
 #avatar-figure {
 	padding-left: 5%;
 	padding-right: 5%;
-	margin-bottom: 20rem;
+/*	margin-bottom: 20rem;*/
+}
+
+#avatar {
+	background-image: url(../img/jan-nowak.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 88%;
+	width: 75%;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 #text-about-me {
@@ -90,10 +101,62 @@ h5 {
 	text-align: center;
 	margin-top: 10rem;
 	margin-bottom: 10rem;
-	
+
 	padding-left: 10%;
 	padding-right: 10%;
-	
+
+}
+
+/*			SECTION PORTFOLIO			*/
+
+.custom-portfolio-container {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.custom-portfolio-image {
+	padding: 0;
+	margin: 0;
+	background-size: cover;
+}
+
+#portfolio-image-1 {
+	background-image: url(../img/portfolio1.jpg);
+}
+
+#portfolio-image-2 {
+	background-image: url(../img/portfolio3.jpg);
+}
+
+#portfolio-image-3 {
+	background-image: url(../img/portfolio4.jpg);
+}
+
+.custom-cover {
+	opacity: 1;
+	background-color: rgba(37, 66, 83, .6);
+	margin: 0;
+	height: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.custom-cover h5,
+h6,
+p {
+	padding: 0;
+	margin: 0;
+		color: white;
+}
+
+
+.custom-cover h6 {
+	margin-top: 9rem;
+	font-size: 9rem;
+	text-align: center;
+
 }
 
 
@@ -105,12 +168,15 @@ h5 {
 
 
 
-
-
-
+/*wykorzystać padding top 100% na divie.custom-portfolio-image nadać mu tło i jazda. Na div.custom-cover dać ::after z borderem i padingiem*/
 
 @media (max-width: 992px) {
 	.custom-nav {
 		background-color: rgba(70, 191, 0, .3);
 	}
+/*
+	#text-about-me {
+		margin-top: -;
+	}
+*/
 }
