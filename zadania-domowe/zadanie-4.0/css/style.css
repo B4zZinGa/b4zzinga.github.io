@@ -39,7 +39,7 @@ body {
     width: 100%;
     height: 100%;
 
-    background-color: #ff6f00;
+    background-color: rgba(255, 111, 0, 0.8);
 
     opacity: .0;
 }
@@ -70,7 +70,7 @@ i {
 }
 
 .cover:hover {
-    opacity: 0.8;
+    opacity: 1;
     transition: all .5s ease;
 }
 
