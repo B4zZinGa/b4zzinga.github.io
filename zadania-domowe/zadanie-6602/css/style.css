@@ -113,7 +113,6 @@ h5 {
 	padding-left: 10%;
 	padding-right: 10%;
 	overflow: hidden;
-	max-height: 70vh;
 }
 
 .custom-portfolio-image {
@@ -284,5 +283,3 @@ input[type="submit"] {
 	}
 
 }
-
-rgb(20, 38, 52) rgb(43, 74, 100) rgb(169, 169, 169)
