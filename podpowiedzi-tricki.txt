@@ -1,0 +1,1 @@
+if regulamin nie zaznaczony and hover na submit to podkreœl regulamin na czerwono.

@@ -13,7 +13,7 @@
 
 	<!--		LINK FONTAWESOME CSS		-->
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="../../tools/fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.css">
 
 	<!--		LINK BOOTSTRAP CSS		-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,7 +25,7 @@
 <body id="custom-body">
 	<!--		NAVIGATION START		-->
 
-	<nav class="navbar fixed-top navbar-expand-lg navbar-light custom-nav d-flex justify-content-end">
+	<nav id="main-nav" class="navbar fixed-top navbar-expand-lg navbar-light custom-nav d-flex justify-content-end">
 		<button class="navbar-toggler custom-nav-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
    		<span class="navbar-toggler-icon"></span>
    		</button>
@@ -35,19 +35,19 @@
 			<ul class="navbar-nav w-100 justify-content-end ">
 
 				<li class="nav-item">
-					<a class="nav-link custom-nav-link text-right" href="#">O mnie</a>
+					<a class="nav-link custom-nav-link text-right" href="#about-me-section">O mnie</a>
 				</li>
 
 				<li class="nav-item">
-					<a class="nav-link custom-nav-link text-right" href="#">Umiejętności</a>
+					<a class="nav-link custom-nav-link text-right" href="#skills">Umiejętności</a>
 				</li>
 
 				<li class="nav-item">
-					<a class="nav-link custom-nav-link text-right" href="#">Portfolio</a>
+					<a class="nav-link custom-nav-link text-right" href="#portfolio">Portfolio</a>
 				</li>
 
 				<li class="nav-item">
-					<a class="nav-link custom-nav-link text-right" href="#">Kontakt</a>
+					<a class="nav-link custom-nav-link text-right" href="#footer">Kontakt</a>
 				</li>
 			</ul>
 		</div>
@@ -60,7 +60,7 @@
 	<div id="header-img" class="container-fluid w-100 custom-header-container d-flex align-items-center justify-content-center text-center">
 
 		<header id="name" class="header-caption ">
-			<h1 class="header-headline m-5">Jan<span>Nowak</span></h1>
+			<h1 class="header-headline m-5">Jan<span> Nowak</span></h1>
 			<h2 class="header-paragraf m-5">Front-End Developer</h2>
 		</header>
 
@@ -73,7 +73,8 @@
 		<h3>O <span>mnie</span></h3>
 		<div class="row w-100">
 
-			<figure id="avatar-figure" class="d-flex justify-content-center custom-avatar-figure col-12 col-lg-6"><div id="avatar" class="" alt=""></div>
+			<figure id="avatar-figure" class="d-flex justify-content-center custom-avatar-figure col-12 col-lg-6">
+				<div id="avatar" class="" alt=""></div>
 			</figure>
 
 			<article id="text-about-me" class="custom-text-about-me col-12 col-lg-6">
@@ -119,35 +120,38 @@
 
 	<!--		SECTION PORTFOLIO START		-->
 
-<section id="portfolio" class="custom-section-portfolio">
-	<h3>Moje<span>portfolio</span></h3>
-	<div class="row w-100 custom-portfolio-container">
-		<div id="portfolio-image-1" class="col-12 col-md-4 custom-portfolio-image">
-			<div class="custom-cover w-100">
-				<h5>Lorem ipsum.</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit sapiente, cum ipsam quod quaerat sunt, vero similique dolor ratione atque a aliquam, illo ab assumenda ducimus? Laudantium.</p>
-				<h6>Wykorzystane technologie:</h6>
-				<p>HTML5, CSS3, RWD, BootStrap, JavaScript, jQuery</p>
+	<section id="portfolio" class="custom-section-portfolio">
+		<h3>Moje<span>portfolio</span></h3>
+		<div class="row w-100 custom-portfolio-container">
+			<div id="portfolio-image-1" class="col-12 col-lg-4 custom-portfolio-image">
+				<div class="custom-cover w-100 text-center">
+					<h5>Lorem ipsum.</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit sapiente, cum ipsam quod quaerat sunt, vero similique dolor ratione atque a aliquam, illo ab assumenda ducimus? Laudantium.</p>
+					<h6>Wykorzystane technologie:</h6>
+					<p>HTML5, CSS3, RWD, BootStrap, JavaScript, jQuery</p>
+					<a href="#"><i class="fas fa-link"></i></a>
+				</div>
+			</div>
+			<div id="portfolio-image-2" class="col-12 col-lg-4 custom-portfolio-image">
+				<div class="custom-cover w-100 text-center">
+					<h5>Lorem ipsum.</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto illum vitae dignissimos odit molestias est veniam nesciunt, magnam veritatis maxime voluptates excepturi nulla repellat adipisci, tempora illo!</p>
+					<h6>Wykorzystane technologie:</h6>
+					<p>HTML5, CSS3, RWD, BootStrap, JavaScript, jQuery</p>
+					<a href="#"><i class="fas fa-link"></i></a>
+				</div>
+			</div>
+			<div id="portfolio-image-3" class="col-12 col-lg-4 custom-portfolio-image">
+				<div class="custom-cover w-100 text-center">
+					<h5>Lorem ipsum.</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio consectetur, reiciendis consequatur, modi sit, natus, incidunt dicta omnis ut est quaerat deleniti. Ipsa deserunt, voluptatibus voluptate commodi.</p>
+					<h6>Wykorzystane technologie:</h6>
+					<p>HTML5, CSS3, RWD, BootStrap, JavaScript, jQuery</p>
+					<a href="#"><i class="fas fa-link"></i></a>
+				</div>
 			</div>
 		</div>
-		<div id="portfolio-image-2" class="col-12 col-md-4 custom-portfolio-image">
-			<div class="custom-cover w-100">
-				<h5>Lorem ipsum.</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto illum vitae dignissimos odit molestias est veniam nesciunt, magnam veritatis maxime voluptates excepturi nulla repellat adipisci, tempora illo!</p>
-				<h6>Wykorzystane technologie:</h6>
-				<p>HTML5, CSS3, RWD, BootStrap, JavaScript, jQuery</p>
-			</div>
-		</div>
-		<div id="portfolio-image-3" class="col-12 col-md-4 custom-portfolio-image">
-			<div class="custom-cover w-100">
-				<h5>Lorem ipsum.</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio consectetur, reiciendis consequatur, modi sit, natus, incidunt dicta omnis ut est quaerat deleniti. Ipsa deserunt, voluptatibus voluptate commodi.</p>
-				<h6>Wykorzystane technologie:</h6>
-				<p>HTML5, CSS3, RWD, BootStrap, JavaScript, jQuery</p>
-			</div>
-		</div>
-	</div>
-</section>
+	</section>
 
 
 
@@ -157,8 +161,47 @@
 
 	<!--		FOOTER START		-->
 
+	<section id="footer">
+		<div class="row w-100 custom-footer">
 
+			<address class="custom-address col-12 col-md-6">
+				
+				<h3 class="custom-footer-name">Jan<span> Nowak</span></h3>
+			
+				ul. Mostowa 6/13
+				<br>
+				31-061 Kraków
+				<br>
+				<br>
+				tel: 506 605 503
+				<br>
+				e-mail:	<a href="takimail@wp.pl">takimail@wp.pl</a>
+				
+				<div class="custom-icon-container">
+					<i class="fab fa-facebook-f"></i>
+					<i class="fab fa-google-plus-g"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-linkedin-in"></i>
+				</div>
+				
+			</address>
 
+			<fieldset class="custom-fieldset col-12 col-md-6 text-right">
+
+				<form action="https://formspree.io/your@email.com" method="POST">
+					<input type="text" name="name" placeholder="Imię i Nazwisko">
+					<input type="email" name="_replyto" placeholder="Email">
+					<textarea name="textarea" placeholder="Wpisz swoją wiadomość..."></textarea>
+					<input type="submit" value="Wyślij">
+				</form>
+
+			</fieldset>
+
+		</div>
+
+	</section>
+
+<div class="copyrights w-100 text-center">copyrights © Jan Nowak</div>
 
 
 	<!--		FOOTER END		-->
@@ -170,7 +213,10 @@
 
 
 	<!--		SCRIPT JQUERY LIBRARY 		-->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 
 	<!--		SCRIPT AJAX LIBRARY 		-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
